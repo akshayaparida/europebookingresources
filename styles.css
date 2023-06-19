@@ -21,7 +21,12 @@ body::before {
   height: 100%;
   z-index: -1;
 }
-
+img.github-logo {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  opacity: 1;
+}
 .container {
   flex: 1;
   display: flex;
@@ -53,7 +58,7 @@ li:hover {
   background-color: #f0f0f0;
 }
 
-a {
+a.list-link {
   display: block;
   border: 1px solid #fefefe;
   border-radius: 10px;
@@ -63,7 +68,7 @@ a {
   box-sizing: border-box;
 }
 
-a:hover {
+a.list-link:hover {
   background-color: #fcd600;
 }
 
@@ -83,7 +88,23 @@ footer {
     margin-bottom: 8px;
   }
 
-  a {
+  a.list-link {
     padding: 8px;
   }
+
+  img.github-logo {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    height: auto;
+    opacity: 1;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
 }
+
+
+
+  
